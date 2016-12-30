@@ -1,0 +1,309 @@
+/*
+# Name		mstyle.css
+# Project	this is a part of mstory theme
+# Copyright (c) 2015 cfdev
+*/
+
+/* style extern */
+@import url('plucss.css');
+@import url('animate.css');
+@import url('font-awesome.min.css');
+
+/* FONTS */
+@font-face{
+    font-family : "writer";
+    src : url('../fonts/QumpellkaNo12.otf');
+}
+
+/* ---------- GENERAL ---------- */
+h1,
+h1 a,
+h2,
+h2 a,
+h3,
+h3 a{
+	font-family: "writer";
+	color: #555;
+	padding: 0.25em;
+
+}
+h1:first-letter{
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+body{
+	color:#444;
+	background-color: #F5F5F5;
+	margin:0;
+	padding:0;
+}
+
+header[role=banner]{
+	color: #FFF;
+	background: #AAA url('../img/back.jpg') no-repeat center fixed;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardis�e */
+	min-height: 250px;
+}
+header[role=banner] h1{
+	margin: 0;
+}
+header[role=banner] h1 a,
+header[role=banner] h2 {
+	color: #FFF;
+}
+
+.title_icon{
+	background-image:url(../img/glyphicons/glyphicons-67-tags.png);
+	background-repeat: no-repeat;
+	background-position: 4px 4px;
+	padding-left: 38px;
+ }
+
+a{
+	color:#9C7825;
+}
+
+a:hover{
+	text-decoration:none;
+	color: #black;
+}
+
+.badge, .label {
+    background-color: #9E8F50;
+    color: #FFF;
+    display: inline-block;
+    margin-right: 2.2rem;
+	padding: 0.2em;
+	border-radius: 4px;
+	float:right;
+}
+.cat{
+	margin-bottom:0.2em;
+}
+.meta{
+	font-size: 0.92em;
+}
+#home_content{
+	background-color: #E2E2E2;
+	font-size: large;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	text-shadow: 1px 1px #fff;
+}
+/* ---------- NAV ---------- */
+
+nav[role=navigation]{
+	background-color: #333;
+	color: #eee;
+	border-bottom: 2px solid #555;
+}
+
+.responsive-menu {
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+  padding-right: 1em;
+}
+
+.responsive-menu li a {
+	font-size: 1.15em;
+	color: #ddd;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+.responsive-menu ul li a {
+    text-align: center;
+}
+
+.responsive-menu ul li a:hover {
+    background: none;
+}
+
+.responsive-menu li a:hover{
+	color: #9E8F50;
+	text-decoration: none;
+	transition: color 0.75s;
+	background: transparent;
+}
+.responsive-menu li a.active {
+	color: #9E8F50;
+}
+
+.button{
+	border-radius: 3px;
+}
+
+.comment {
+    background-image: url("../img/user.png");
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+	border-left: 0.8rem solid #9E8F50;
+}
+.info_comment {
+    border-bottom: 1px solid #9E8F50;
+}
+.info_comment .badge{
+	margin-left: 0rem;
+}
+.capcha-word {
+	background-color: #9E8F50;
+	border-radius: 4px;
+}
+input{
+	margin-top:0.5em;
+}
+.tag li{
+    margin: 2px;
+    color: #555;
+    font-size: 1.05em;
+    background: none repeat scroll 0% 0% #DDD !important;
+    border-radius: 2px;
+    padding: 0.3em;
+}
+hr{
+	width: 75%;
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+}
+
+/* ---------- PAGINATION ---------- */
+#pagination{
+	text-align:center;
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+.p_next a,
+.p_prev a,
+.p_last a,
+.p_first a{
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.33;
+	border-radius: 6px;
+	color: #333;
+
+	text-shadow:0 1px 0 #fff;
+	background-color: #EFEFEF;
+	border: 1px solid #ccc;
+	margin-left: 0.8em;
+}
+.p_next a:after{
+	content:" >";
+}
+.p_prev a:before{
+	content:"< ";
+}
+
+.p_next:hover a,.p_next:focus a,
+.p_prev:hover a,.p_prev:focus a,
+.p_last:hover a,
+.p_first:hover a{
+	text-decoration:none;
+	background-color:#e0e0e0;
+	background-position:0 -15px;
+}
+
+.p_next:active a,.p_next:active a,
+.p_prev:active a,.p_prev:active a,
+.p_last:active a,
+.p_first:active a{
+	text-decoration:none;
+	background-color:#e0e0e0;
+	border-color:#dbdbdb;
+}
+
+/* ---------- FORM ---------- */
+button, input, select, textarea {
+	border-radius: 4px;
+}
+form{
+	max-width:768px;
+	margin-left:auto;
+	margin-right:auto;
+}
+/* ---------- FOOTER ---------- */
+footer[role=contentinfo] {
+	clear: both;
+	color: #555;
+	padding-top: 0px;
+	background-color:#E2E2E2;
+	margin-top: 1.5em;
+}
+footer {
+}
+footer .grid{
+	padding: 0.5em;
+}
+footer .info{
+	color:#ddd;
+	background-color: #686868;
+	padding: 0.5em;
+}
+footer .info a{
+	color:#fff;
+}
+footer .info a:hover {
+    text-decoration: none;
+    color: #D1A132;
+}
+/* ----------- ARTICLE ---------- */
+.grid article{
+	border-left: 1px solid #AAA;
+	margin-top: 1em;
+	margin-bottom: 4em;
+}
+.grid article h1{
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 1.5rem;
+}
+.grid article .vignette img{
+	height: 220px;
+	width: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+/* ---------- SURCHARGE PLUGIN -----*/
+article .vignette {
+    float: none !important;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.lessbuttons_com_slider {
+	z-index: 0 !important;
+}
+
+/* ----------- EFFECTS----------- */
+ul.features{
+	margin-left: -35px;
+}
+
+.features li{
+	list-style-type: none;
+	margin-bottom: 10px;
+}
+
+.features li:before {
+    content: url("../img/check_icon.png");
+    margin-right: 8px;
+    vertical-align: top;
+}
+
+/* ------------ CFDEV ------------*/
+.cfdev,
+.cfdev:hover {
+	text-decoration:none;
+	color: #D1A132;
+ }
+.cfdev:after {
+	content:url(../img/cfdev.png);
+ }
