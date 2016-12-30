@@ -70,7 +70,7 @@
 					<a href="<?php $plxShow->urlRewrite('#top') ?>" title="<?php $plxShow->lang('GOTO_TOP') ?>"><?php $plxShow->lang('TOP') ?></a>
 					<br/>
 					<a rel="nofollow" href="<?php $plxShow->urlRewrite('core/admin/'); ?>" title="<?php $plxShow->lang('ADMINISTRATION') ?>"><?php $plxShow->lang('ADMINISTRATION') ?></a> - 
-					<small><a href="http://cfdev.fr" class="cfdev" title="mstory template by cfdev under CC-BY-NC"> </a></small>
+					<small><a href="http://cfdev.fr" class="cfdev" title="mstory template by cfdev under GPLV3"> </a></small>
 					<?php $plxShow->httpEncoding() ?>
 				</p>
 			</div>	
